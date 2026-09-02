@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עיצובימייל - קטלוג תבניות ו-GIFs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <span class="badge">ענן תבניות מתעדכן</span>
+        <h1>✉️ עיצובימייל - גלריית תבניות ו-GIFs</h1>
+        <p>צפה בתבניות העדכניות, העתק אותן בלחיצת כפתור אחת ישר לג'ימייל, או התקן את התוסף לדפדפן.</p>
+    </header>
+
+    <div class="container" id="catalogContainer">
+        <!-- Loaded dynamically from templates.json -->
+        <div style="text-align: center; padding: 40px; color: #64748b;">
+            טוען את קטלוג התבניות...
+        </div>
+    </div>
+
+    <div id="toast" class="toast">✨ התבנית הועתקה ללוח בהצלחה! פתח את ג'ימייל והדבק (Ctrl+V)</div>
+
+    <script>
+        async function loadCatalog() {
+            try {
+                const res = await fetch('templates.json');
+                const data = await res.json();
+                renderCatalog(data);
+            } catch (err) {
+                console.error("Error loading templates.json:", err);
+                document.getElementById('catalogContainer').innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #ef4444;">
+                        שגיאה בטעינת קובץ templates.json. ודא שהקובץ קיים באותה תיקייה.
+                    </div>
+                `;
+            }
+        }
+
+        function renderCatalog(data) {
+            const container = document.getElementById('catalogContainer');
+            container.innerHTML = '';
+
+            const categories = data.categories || {};
+            for (const [catKey, cat] of Object.entries(categories)) {
+                const catTitle = document.createElement('h2');
+                catTitle.className = 'category-title';
+                catTitle.textContent = cat.label;
+                container.appendChild(catTitle);
+
+                const grid = document.createElement('div');
+                grid.className = 'grid';
+
+                (cat.items || []).forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="card-preview">
+                            <div class="preview-scaler">${item.content}</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>${item.name}</h3>
+                            <p>${item.description || ''}</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary" onclick="copyTemplateHtml('${item.id}')">📋 העתק למייל</button>
+                                <button class="btn btn-secondary" onclick="viewSource('${item.id}')">&lt;/&gt; קוד HTML</button>
+                            </div>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                container.appendChild(grid);
+            }
+        }
+
+        window.templateStore = {};
+
+        async function fetchTemplateById(id) {
+            if (!window.templateStore[id]) {
+                const res = await fetch('templates.json');
+                const data = await res.json();
+                const categories = data.categories || {};
+                for (const cat of Object.values(categories)) {
+                    const hit = (cat.items || []).find(x => x.id === id);
+                    if (hit) {
+                        window.templateStore[id] = hit.content;
+                        break;
+                    }
+                }
+            }
+            return window.templateStore[id];
+        }
+
+        async function copyTemplateHtml(id) {
+            const html = await fetchTemplateById(id);
+            if (!html) return;
+
+            try {
+                // Rich HTML Clipboard Copy
+                const blobHtml = new Blob([html], { type: 'text/html' });
+                const blobText = new Blob([html.replace(/<[^>]*>/g, '')], { type: 'text/plain' });
+                const item = new ClipboardItem({
+                    'text/html': blobHtml,
+                    'text/plain': blobText
+                });
+                await navigator.clipboard.write([item]);
+                showToast();
+            } catch (err) {
+                // Fallback for browsers without ClipboardItem text/html
+                const tempEl = document.createElement('div');
+                tempEl.innerHTML = html;
+                tempEl.style.position = 'fixed';
+                tempEl.style.left = '-9999px';
+                document.body.appendChild(tempEl);
+                
+                const range = document.createRange();
+                range.selectNodeContents(tempEl);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+                document.execCommand('copy');
+                document.body.removeChild(tempEl);
+                showToast();
+            }
+        }
+
+        async function viewSource(id) {
+            const html = await fetchTemplateById(id);
+            if (!html) return;
+            prompt("העתק את קוד ה-HTML:", html);
+        }
+
+        function showToast() {
+            const t = document.getElementById('toast');
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3500);
+        }
+
+        loadCatalog();
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "name": "עיצובימייל - קטלוג תבניות ענן",
+  "updatedAt": "2026-09-02",
+  "categories": {
+    "gifs_and_media": {
+      "label": "🎬 אנימציות ו-GIFs למייל",
+      "items": [
+        {
+          "id": "cloud_gif_welcome",
+          "name": "ברוכים הבאים מונפש",
+          "description": "באנר פתיחה חגיגי עם אייקון מונפש",
+          "content": "<div class=\"sigura-block\" style=\"background:#f0fdf4; border:1px solid #bbf7d0; border-radius:12px; padding:30px; text-align:center; max-width:580px; margin:15px auto; font-family:'Assistant', sans-serif;\"><div style=\"font-size:48px; margin-bottom:10px;\">🎉</div><h2 style=\"color:#166534; margin:0 0 10px 0; font-size:26px;\">שמחים שבחרת להצטרף!</h2><p style=\"color:#14532d; font-size:16px; line-height:1.6;\"><span class=\"sig-cursor-target\">אנחנו כאן כדי לתת לך את השירות הטוב ביותר. לכל שאלה אל תהסס לפנות.</span></p><div style=\"margin-top:20px;\"><a href=\"#\" style=\"background:#16a34a; color:#fff; padding:12px 28px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;\">בואו נתחיל</a></div></div>"
+        },
+        {
+          "id": "cloud_gif_timer",
+          "name": "טיימר / מבצע דחוף",
+          "description": "תיבת מבצע עם שעון חול והנעה לפעולה",
+          "content": "<div class=\"sigura-block\" style=\"background:#fff7ed; border:2px dashed #f97316; border-radius:16px; padding:30px; text-align:center; max-width:580px; margin:15px auto; font-family:'Assistant', sans-serif;\"><div style=\"font-size:42px; margin-bottom:5px;\">⏳</div><div style=\"color:#c2410c; font-weight:bold; font-size:14px; text-transform:uppercase; letter-spacing:1px;\">הזדמנות אחרונה</div><h2 style=\"color:#9a3412; font-size:30px; margin:8px 0;\">המבצע מסתיים בקרוב!</h2><p style=\"color:#7c2d12; font-size:17px; margin-bottom:20px;\"><span class=\"sig-cursor-target\">השתמשו בקוד הקופון: SPECIAL2026</span></p><a href=\"#\" style=\"background:linear-gradient(135deg, #ea580c, #c2410c); color:#fff; padding:14px 36px; border-radius:50px; text-decoration:none; font-weight:bold; display:inline-block; box-shadow:0 4px 12px rgba(234,88,12,0.3);\">למימוש ההטבה עכשיו</a></div>"
+        }
+      ]
+    },
+    "festive_specials": {
+      "label": "🌟 מיוחדים וחגיגיים",
+      "items": [
+        {
+          "id": "cloud_vip_invitation",
+          "name": "הזמנת VIP יוקרתית",
+          "description": "כרטיס הזמנה שחור-זהב עם מסגרת כפולה",
+          "content": "<div class=\"sigura-block\" style=\"background:#121212; padding:35px 20px;\"><div style=\"border:2px solid #d4af37; border-radius:8px; padding:30px; max-width:560px; margin:0 auto; text-align:center; background:#1c1c1c; font-family:'Frank Ruhl Libre', serif; color:#fdf6d8;\"><div style=\"color:#d4af37; font-size:13px; letter-spacing:3px; font-family:sans-serif; margin-bottom:15px;\">VIP INVITATION</div><h1 style=\"color:#fceea7; font-size:34px; margin:0 0 15px 0; font-weight:normal;\">הזמנה לאירוע המרכזי</h1><div style=\"width:60px; height:1px; background:#d4af37; margin:0 auto 20px auto;\"></div><p style=\"font-size:18px; line-height:1.7; color:#e0d9b8;\"><span class=\"sig-cursor-target\">נשמח לראותכם בין אורחינו המכובדים בערב ההוקרה החגיגי.</span></p><div style=\"margin-top:25px;\"><a href=\"#\" style=\"background:linear-gradient(135deg, #d4af37, #aa820a); color:#121212; padding:12px 30px; border-radius:4px; text-decoration:none; font-weight:bold; display:inline-block; font-family:sans-serif; font-size:14px;\">אישור השתתפות</a></div></div></div>"
+        },
+        {
+          "id": "cloud_weekly_bulletin",
+          "name": "עלון שבועי מחולק לעמודות",
+          "description": "מבנה עלון מודרני עם 2 עמודות",
+          "content": "<div class=\"sigura-block\" style=\"background:#f8fafc; padding:30px 15px; font-family:'Assistant', sans-serif;\"><div style=\"max-width:600px; margin:0 auto; background:#fff; border-radius:12px; border:1px solid #e2e8f0; overflow:hidden;\"><div style=\"background:#0f172a; color:#fff; padding:25px; text-align:center;\"><h1 style=\"margin:0; font-size:24px;\">עדכון שבועי</h1><p style=\"margin:5px 0 0 0; color:#94a3b8; font-size:14px;\">גיליון מס' 12 • תשפ\"ו</p></div><div style=\"padding:25px;\"><h3 style=\"color:#1e293b; margin-top:0;\">📌 כותרת ראשית</h3><p style=\"color:#475569; line-height:1.6;\"><span class=\"sig-cursor-target\">כאן כותבים את החדשות והעדכונים העיקריים של השבוע.</span></p><hr style=\"border:0; border-top:1px solid #f1f5f9; margin:20px 0;\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td width=\"48%\" valign=\"top\" style=\"background:#f8fafc; padding:15px; border-radius:8px;\"><strong style=\"color:#2563eb;\">💡 פינת הטיפ</strong><p style=\"font-size:13px; color:#64748b; margin:8px 0 0 0;\">טיפ קצר ומועיל להשבוע.</p></td><td width=\"4%\"></td><td width=\"48%\" valign=\"top\" style=\"background:#f8fafc; padding:15px; border-radius:8px;\"><strong style=\"color:#16a34a;\">📅 לו\"ז קרוב</strong><p style=\"font-size:13px; color:#64748b; margin:8px 0 0 0;\">יום שלישי בשעה 10:00.</p></td></tr></table></div></div></div>"
+        }
+      ]
+    }
+  }
+}
