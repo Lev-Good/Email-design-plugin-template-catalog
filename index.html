@@ -6,32 +6,50 @@
     <title>עיצובימייל - קטלוג תבניות ו-GIFs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Frank+Ruhl+Libre:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <span class="badge">ענן תבניות מתעדכן</span>
-        <h1>✉️ עיצובימייל - גלריית תבניות ו-GIFs</h1>
-        <p>צפה בתבניות העדכניות, העתק אותן בלחיצת כפתור אחת ישר לג'ימייל, או התקן את התוסף לדפדפן.</p>
+        <span class="badge">ענן תבניות ו-GIFs מתעדכן</span>
+        <h1>✉️ עיצובימייל - גלריית תבניות, אמוג'י 3D ו-GIFs</h1>
+        <p>צפה במגוון ענק של תבניות מעוצבות, אנימציות, אייקונים מונפשים ואמוג'י 3D למייל. העתק בלחיצת כפתור אחת ישירות לג'ימייל!</p>
     </header>
 
-    <div class="container" id="catalogContainer">
-        <!-- Loaded dynamically from templates.json -->
-        <div style="text-align: center; padding: 40px; color: #64748b;">
-            טוען את קטלוג התבניות...
+    <div class="container">
+        <!-- Controls: Search & Category Filter Tabs -->
+        <div class="controls-wrapper">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="חפש תבנית, GIF, אמוג'י, נושא או מילת מפתח..." oninput="filterTemplates()">
+            </div>
+            <div class="tabs-container" id="tabsContainer">
+                <button class="tab-btn active" onclick="selectCategory('all', this)">🌟 הכל</button>
+            </div>
+        </div>
+
+        <!-- Catalog Container -->
+        <div id="catalogContainer">
+            <div style="text-align: center; padding: 40px; color: #64748b;">
+                טוען את קטלוג התבניות...
+            </div>
         </div>
     </div>
 
-    <div id="toast" class="toast">✨ התבנית הועתקה ללוח בהצלחה! פתח את ג'ימייל והדבק (Ctrl+V)</div>
+    <div id="toast" class="toast">✨ הועתק ללוח בהצלחה! פתח את ג'ימייל והדבק (Ctrl+V)</div>
 
     <script>
+        let catalogData = null;
+        let currentFilter = 'all';
+        window.templateStore = {};
+
         async function loadCatalog() {
             try {
                 const res = await fetch('templates.json');
-                const data = await res.json();
-                renderCatalog(data);
+                catalogData = await res.json();
+                buildTabs(catalogData.categories || {});
+                renderCatalog();
             } catch (err) {
                 console.error("Error loading templates.json:", err);
                 document.getElementById('catalogContainer').innerHTML = `
@@ -42,21 +60,66 @@
             }
         }
 
-        function renderCatalog(data) {
+        function buildTabs(categories) {
+            const tabsContainer = document.getElementById('tabsContainer');
+            for (const [key, cat] of Object.entries(categories)) {
+                const btn = document.createElement('button');
+                btn.className = 'tab-btn';
+                btn.textContent = cat.label;
+                btn.onclick = () => selectCategory(key, btn);
+                tabsContainer.appendChild(btn);
+            }
+        }
+
+        function selectCategory(catKey, btnEl) {
+            currentFilter = catKey;
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            btnEl.classList.add('active');
+            renderCatalog();
+        }
+
+        function filterTemplates() {
+            renderCatalog();
+        }
+
+        function renderCatalog() {
+            if (!catalogData || !catalogData.categories) return;
+
             const container = document.getElementById('catalogContainer');
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
             container.innerHTML = '';
 
-            const categories = data.categories || {};
-            for (const [catKey, cat] of Object.entries(categories)) {
+            let totalMatches = 0;
+
+            for (const [catKey, cat] of Object.entries(catalogData.categories)) {
+                if (currentFilter !== 'all' && currentFilter !== catKey) continue;
+
+                // Filter items by search query
+                const items = (cat.items || []).filter(item => {
+                    if (!query) return true;
+                    const name = (item.name || '').toLowerCase();
+                    const desc = (item.description || '').toLowerCase();
+                    const catLabel = (cat.label || '').toLowerCase();
+                    return name.includes(query) || desc.includes(query) || catLabel.includes(query);
+                });
+
+                if (items.length === 0) continue;
+                totalMatches += items.length;
+
+                const section = document.createElement('div');
+                section.className = 'category-section';
+
                 const catTitle = document.createElement('h2');
                 catTitle.className = 'category-title';
                 catTitle.textContent = cat.label;
-                container.appendChild(catTitle);
+                section.appendChild(catTitle);
 
                 const grid = document.createElement('div');
                 grid.className = 'grid';
 
-                (cat.items || []).forEach(item => {
+                items.forEach(item => {
+                    window.templateStore[item.id] = item.content;
+
                     const card = document.createElement('div');
                     card.className = 'card';
                     card.innerHTML = `
@@ -75,30 +138,23 @@
                     grid.appendChild(card);
                 });
 
-                container.appendChild(grid);
+                section.appendChild(grid);
+                container.appendChild(section);
             }
-        }
 
-        window.templateStore = {};
-
-        async function fetchTemplateById(id) {
-            if (!window.templateStore[id]) {
-                const res = await fetch('templates.json');
-                const data = await res.json();
-                const categories = data.categories || {};
-                for (const cat of Object.values(categories)) {
-                    const hit = (cat.items || []).find(x => x.id === id);
-                    if (hit) {
-                        window.templateStore[id] = hit.content;
-                        break;
-                    }
-                }
+            if (totalMatches === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 50px 20px; color: #64748b;">
+                        <div style="font-size: 40px; margin-bottom: 10px;">🔍</div>
+                        <h3 style="font-size: 20px; color: #334155; margin-bottom: 6px;">לא נמצאו תבניות מתאימות</h3>
+                        <p>נסה לחפש במילים אחרות או בחר קטגוריה אחרת.</p>
+                    </div>
+                `;
             }
-            return window.templateStore[id];
         }
 
         async function copyTemplateHtml(id) {
-            const html = await fetchTemplateById(id);
+            const html = window.templateStore[id];
             if (!html) return;
 
             try {
@@ -112,7 +168,7 @@
                 await navigator.clipboard.write([item]);
                 showToast();
             } catch (err) {
-                // Fallback for browsers without ClipboardItem text/html
+                // Fallback for browsers
                 const tempEl = document.createElement('div');
                 tempEl.innerHTML = html;
                 tempEl.style.position = 'fixed';
@@ -130,8 +186,8 @@
             }
         }
 
-        async function viewSource(id) {
-            const html = await fetchTemplateById(id);
+        function viewSource(id) {
+            const html = window.templateStore[id];
             if (!html) return;
             prompt("העתק את קוד ה-HTML:", html);
         }
