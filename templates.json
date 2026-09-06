@@ -448,6 +448,287 @@
           "content": "<div class=\"sigura-block\" style=\"text-align:center; margin:16px auto; max-width:480px;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_line_wave.gif\" width=\"100%\" height=\"10\" alt=\"גל מונפש\" style=\"display:block;\"></div>"
         }
       ]
+    },
+    "animated_icons_gallery": {
+      "label": "🎬 גלריית כל ה-GIFs והאייקונים המונפשים (46)",
+      "items": [
+        {
+          "id": "cloud_gif_bell",
+          "name": "🔔 פעמון התראה מונפש",
+          "description": "פעמון מצלצל להדגשת הודעות דחופות",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_bell.gif\" width=\"70\" height=\"70\" alt=\"🔔 פעמון התראה מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_birthday",
+          "name": "🎂 עוגת יום הולדת מונפשת",
+          "description": "איחולי יום הולדת שמח",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_birthday.gif\" width=\"85\" height=\"85\" alt=\"🎂 עוגת יום הולדת מונפשת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_border_pulse",
+          "name": "💫 מסגרת פועמת",
+          "description": "הדגשת תוכן חשוב במייל",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_border_pulse.gif\" width=\"80\" height=\"80\" alt=\"💫 מסגרת פועמת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_checklist",
+          "name": "📋 צ'קליסט משימות מסומן",
+          "description": "רשימת משימות או יתרונות מונפשת",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_checklist.gif\" width=\"75\" height=\"75\" alt=\"📋 צ'קליסט משימות מסומן\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_clap_hat",
+          "name": "👏 מחיאות כפיים מגבעת",
+          "description": "אמוג'י 3D חרדי מוחא כפיים בהתלהבות",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_clap_hat.gif\" width=\"90\" height=\"90\" alt=\"👏 מחיאות כפיים מגבעת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_cool_hat",
+          "name": "😎 מגניב עם מגבעת ומשקפי שמש",
+          "description": "אמוג'י 3D חרדי בסגנון COOL",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_cool_hat.gif\" width=\"90\" height=\"90\" alt=\"😎 מגניב עם מגבעת ומשקפי שמש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_coupon",
+          "name": "🎟️ קופון הנחה זז",
+          "description": "קופון מבצע קופץ להנעה לפעולה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_coupon.gif\" width=\"85\" height=\"85\" alt=\"🎟️ קופון הנחה זז\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_cta",
+          "name": "👆 לחצו כאן / הצבעה מונפשת",
+          "description": "חץ מכוון להנעה ישירה לפעולה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_cta.gif\" width=\"75\" height=\"75\" alt=\"👆 לחצו כאן / הצבעה מונפשת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_daven_kippah",
+          "name": "🙏 מתפלל עם כיפה",
+          "description": "אמוג'י 3D מתפלל מכל הלב",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_daven_kippah.gif\" width=\"90\" height=\"90\" alt=\"🙏 מתפלל עם כיפה\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_discount",
+          "name": "🏷️ תגית הנחה מונפשת",
+          "description": "תגית SALE מונפשת ומבצעים",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_discount.gif\" width=\"80\" height=\"80\" alt=\"🏷️ תגית הנחה מונפשת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_email_open",
+          "name": "✉️ מעטפת מייל נפתחת",
+          "description": "אנימציית מעטפה נפתחת עם מכתב",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_email_open.gif\" width=\"80\" height=\"80\" alt=\"✉️ מעטפת מייל נפתחת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_gift",
+          "name": "🎁 קופסת מתנה נפתחת",
+          "description": "מתנה מפתיעה ללקוחות ולהטבות",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_gift.gif\" width=\"80\" height=\"80\" alt=\"🎁 קופסת מתנה נפתחת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_grin_hat",
+          "name": "😁 חיוך רחב עם מגבעת",
+          "description": "אמוג'י 3D שמח ומחייך",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_grin_hat.gif\" width=\"90\" height=\"90\" alt=\"😁 חיוך רחב עם מגבעת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_hanukkah",
+          "name": "🕎 חנוכייה דולקת מונפשת",
+          "description": "חג אורים שמח",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_hanukkah.gif\" width=\"90\" height=\"90\" alt=\"🕎 חנוכייה דולקת מונפשת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_hat_like",
+          "name": "👍 לייק עם מגבעת",
+          "description": "אמוג'י 3D מסמן לייק ואישור",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_hat_like.gif\" width=\"90\" height=\"90\" alt=\"👍 לייק עם מגבעת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_heart_eyes_hat",
+          "name": "😍 עיני לבבות עם מגבעת",
+          "description": "אמוג'י 3D מאוהב ונרגש",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_heart_eyes_hat.gif\" width=\"90\" height=\"90\" alt=\"😍 עיני לבבות עם מגבעת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_kiss_kippah",
+          "name": "😘 שולח נשיקה עם כיפה",
+          "description": "אמוג'י 3D עם כיפה שולח אהבה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_kiss_kippah.gif\" width=\"90\" height=\"90\" alt=\"😘 שולח נשיקה עם כיפה\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_line_chevron",
+          "name": "⏩ חיצים זזים",
+          "description": "הכוונה להמשך קריאה או כפתור",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_line_chevron.gif\" width=\"100\" height=\"20\" alt=\"⏩ חיצים זזים\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_line_dots",
+          "name": "••• נקודות הפרדה זזות",
+          "description": "מפריד עדין ומודרני",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_line_dots.gif\" width=\"120\" height=\"16\" alt=\"••• נקודות הפרדה זזות\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_line_draw",
+          "name": "✏️ קו נמתח מונפש",
+          "description": "אפקט שרטוט קו עדין",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_line_draw.gif\" width=\"140\" height=\"10\" alt=\"✏️ קו נמתח מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_line_gradient",
+          "name": "line gradient",
+          "description": "אייקון מונפש למייל",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_line_gradient.gif\" width=\"80\" height=\"80\" alt=\"line gradient\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_line_ornament",
+          "name": "⚜️ עיטור מסורתי מונפש",
+          "description": "אלמנט וינטג' יהודי",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_line_ornament.gif\" width=\"100\" height=\"20\" alt=\"⚜️ עיטור מסורתי מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_line_wave",
+          "name": "line wave",
+          "description": "אייקון מונפש למייל",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_line_wave.gif\" width=\"80\" height=\"80\" alt=\"line wave\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_loading_dots",
+          "name": "⏳ נקודות טעינה זזות",
+          "description": "ממתינים או מעבדים בקשה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_loading_dots.gif\" width=\"80\" height=\"30\" alt=\"⏳ נקודות טעינה זזות\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_location",
+          "name": "📍 סמן מיקום מונפש",
+          "description": "הגעה לסניף, אירוע או כתובת",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_location.gif\" width=\"70\" height=\"70\" alt=\"📍 סמן מיקום מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_love",
+          "name": "❤️ לב פועם מונפש",
+          "description": "הבעת הערכה ואהבה במייל",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_love.gif\" width=\"70\" height=\"70\" alt=\"❤️ לב פועם מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_new",
+          "name": "✨ תגית NEW מנצנצת",
+          "description": "השקת מוצר או שירות חדש",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_new.gif\" width=\"80\" height=\"50\" alt=\"✨ תגית NEW מנצנצת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_ok_hat",
+          "name": "👌 סימן OK עם מגבעת",
+          "description": "אמוג'י 3D מסמן הכל מעולה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_ok_hat.gif\" width=\"90\" height=\"90\" alt=\"👌 סימן OK עם מגבעת\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_progress_bar",
+          "name": "📊 פס התקדמות נטען",
+          "description": "אינדיקטור התקדמות או טעינה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_progress_bar.gif\" width=\"160\" height=\"20\" alt=\"📊 פס התקדמות נטען\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_rosh_hashana",
+          "name": "🍎 תפוח בדבש מונפש",
+          "description": "שנה טובה ומתוקה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_rosh_hashana.gif\" width=\"85\" height=\"85\" alt=\"🍎 תפוח בדבש מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_sale",
+          "name": "🔥 באנר SALE מונפש",
+          "description": "אייקון מבצע חם למיילים שיווקיים",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_sale.gif\" width=\"80\" height=\"80\" alt=\"🔥 באנר SALE מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_secure",
+          "name": "🔒 מנעול תשלום מאובטח",
+          "description": "אבטחת מידע ותשלום מוגן",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_secure.gif\" width=\"70\" height=\"70\" alt=\"🔒 מנעול תשלום מאובטח\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_shabbat",
+          "name": "🕯️ נרות שבת מונפשים",
+          "description": "ברכת שבת שלום ומבורך",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_shabbat.gif\" width=\"85\" height=\"85\" alt=\"🕯️ נרות שבת מונפשים\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_shipping",
+          "name": "🚚 משאית משלוח בדרך",
+          "description": "עדכון משלוח שיוצא לדרך",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_shipping.gif\" width=\"85\" height=\"85\" alt=\"🚚 משאית משלוח בדרך\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_smile_kippah",
+          "name": "😊 חיוך עדין עם כיפה",
+          "description": "אמוג'י 3D נעים ומסביר פנים",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_smile_kippah.gif\" width=\"90\" height=\"90\" alt=\"😊 חיוך עדין עם כיפה\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_sparkle_row",
+          "name": "sparkle row",
+          "description": "אייקון מונפש למייל",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_sparkle_row.gif\" width=\"80\" height=\"80\" alt=\"sparkle row\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_stars",
+          "name": "⭐ 5 כוכבים מנצנצים",
+          "description": "דירוג שירות ומשוב לקוחות מונפש",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_stars.gif\" width=\"120\" height=\"35\" alt=\"⭐ 5 כוכבים מנצנצים\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_success",
+          "name": "✅ וי ירוק מאושר מונפש",
+          "description": "אישור פעולה, תשלום או קבלת הזמנה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_success.gif\" width=\"75\" height=\"75\" alt=\"✅ וי ירוק מאושר מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_thank_you",
+          "name": "🙏 תודה רבה מונפש",
+          "description": "הכרת תודה מעוצבת ומחממת לב",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_thank_you.gif\" width=\"85\" height=\"85\" alt=\"🙏 תודה רבה מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_think_kippah",
+          "name": "🤔 חושב ומעמיק",
+          "description": "אמוג'י 3D שוקע במחשבות",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_think_kippah.gif\" width=\"90\" height=\"90\" alt=\"🤔 חושב ומעמיק\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_timer",
+          "name": "⏳ שעון חול וטיימר",
+          "description": "טיימר מבצעים והזדמנות אחרונה",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_timer.gif\" width=\"80\" height=\"80\" alt=\"⏳ שעון חול וטיימר\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_underline",
+          "name": "〰️ קו הדגשה מצויר",
+          "description": "הדגשת מילים וכותרות",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_underline.gif\" width=\"120\" height=\"18\" alt=\"〰️ קו הדגשה מצויר\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_wave_kippah",
+          "name": "👋 מנופף לשלום עם כיפה",
+          "description": "אמוג'י 3D מברך לשלום",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_wave_kippah.gif\" width=\"90\" height=\"90\" alt=\"👋 מנופף לשלום עם כיפה\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_welcome",
+          "name": "🎉 ברוכים הבאים מונפש",
+          "description": "קבלת פנים חגיגית למצטרפים",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_welcome.gif\" width=\"85\" height=\"85\" alt=\"🎉 ברוכים הבאים מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_whatsapp",
+          "name": "💬 אייקון וואטסאפ מונפש",
+          "description": "סמל וואטסאפ קופץ ומנצנץ להודעות מייל",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_whatsapp.gif\" width=\"70\" height=\"70\" alt=\"💬 אייקון וואטסאפ מונפש\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        },
+        {
+          "id": "cloud_gif_wink_kippah",
+          "name": "😉 קורץ עם כיפה",
+          "description": "אמוג'י 3D קורץ בחיוך",
+          "content": "<div class=\"sigura-block\" style=\"text-align:center; padding:15px; margin:10px auto;\"><img src=\"https://lev-good.github.io/Email-design-plugin-template-catalog/gifs/cloud_gif_wink_kippah.gif\" width=\"90\" height=\"90\" alt=\"😉 קורץ עם כיפה\" style=\"display:inline-block; vertical-align:middle; max-width:100%;\"></div>"
+        }
+      ]
     }
   }
 }
